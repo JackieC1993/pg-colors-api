@@ -8,7 +8,7 @@ const checkName = (req, res, next) => {
         res.status(400).json({ error: 'Name is required'})
     }
 }
-
+//
 const checkBoolean = (req, res, next) => {
     const fav = req.body.is_favorite
     if (typeof fav === 'boolean') {
