@@ -17,3 +17,5 @@ const checkBoolean = (req, res, next) => {
         res.status(400).json({ error: 'is_favorite must be type boolean'})
      }
     }
+
+    module.exports = { checkName, checkBoolean }
